@@ -1,7 +1,7 @@
 import * as S from './styles'
 import { LogoProps } from './types'
 
-const Logo = ({
+export const Logo = ({
   color = 'white',
   size = 'medium',
   $hideOnMobile = false
@@ -76,5 +76,3 @@ const Logo = ({
     </svg>
   </S.Wrapper>
 )
-
-export default Logo
