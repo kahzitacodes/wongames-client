@@ -26,16 +26,21 @@ export default {
     }
   },
   colors: {
-    primary: '#F231A5',
-    secondary: '#3CD3C1',
-    mainBg: '#06092B',
-    lightBg: '#F2F2F2',
+    brand: '#F366A7',
+    brandDark: '#DC448A',
+    accent: '#2496FF',
+    accentDark: '#1177D6',
+    danger: '#FB6E78',
+    dangerDark: '#F55D5D',
+    bg: '#141527',
+    bgLight: '#1F2141',
     white: '#FAFAFA',
-    black: '#030517',
-    lightGray: '#EAEAEA',
-    gray: '#8F8F8F',
-    darkGray: '#2E2F42',
-    red: '#FF6347'
+    black: '#05061A',
+    grayLight: '#ECECEF',
+    gray: '#6F7287',
+    darkGray: '#2C2E3E',
+    red: '#FB6E78',
+    redDark: '#F55D5D'
   },
   spacings: {
     xxs: '0.8rem',
