@@ -54,8 +54,8 @@ export const Wrapper = styled.button<WrapperProps>`
   ${({ theme, size, $fullWidth, $iconOnly }) => css`
     background: linear-gradient(
       180deg,
-      ${theme.colors.brand},
-      ${theme.colors.brandDark}
+      ${theme.colors.brand} 0%,
+      ${theme.colors.brandDark} 40%
     );
     color: ${theme.colors.white};
     border: none;
@@ -66,14 +66,11 @@ export const Wrapper = styled.button<WrapperProps>`
     align-items: center;
     cursor: pointer;
     gap: ${theme.spacings.xxs};
-    transition: 200ms ease-in-out;
+    background-size: 200% 200%;
+    transition: background-position 0.2s linear;
 
     &:hover {
-      background: linear-gradient(
-        180deg,
-        ${theme.colors.brandDark},
-        ${theme.colors.brandDark}
-      );
+      background-position: 0 100%;
     }
 
     ${!!size && wrapperModifiers[size](theme, $iconOnly)};
