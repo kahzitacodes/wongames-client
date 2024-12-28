@@ -38,7 +38,7 @@ export default {
     black: '#05061A',
     grayLight: '#ECECEF',
     gray: '#6F7287',
-    darkGray: '#2C2E3E',
+    grayDark: '#2C2E3E',
     red: '#FB6E78',
     redDark: '#F55D5D'
   },
