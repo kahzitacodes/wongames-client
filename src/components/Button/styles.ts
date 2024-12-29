@@ -11,7 +11,7 @@ const wrapperModifiers = {
     height: 3.2rem;
     font-size: ${theme.font.sizes.xs};
     padding: ${iconOnly ? 0 : theme.spacings.xxs};
-    width: ${iconOnly ? '3.2rem' : 'auto'};
+    width: ${iconOnly ? '3.2rem' : 'fit-content'};
 
     svg {
       width: 1.6rem;
@@ -22,7 +22,7 @@ const wrapperModifiers = {
     height: 4rem;
     font-size: ${theme.font.sizes.sm};
     padding: 0 ${iconOnly ? 0 : theme.spacings.xs};
-    width: ${iconOnly ? '4rem' : 'auto'};
+    width: ${iconOnly ? '4rem' : 'fit-content'};
 
     svg {
       width: 2rem;
@@ -33,7 +33,7 @@ const wrapperModifiers = {
     height: 4.8rem;
     font-size: ${theme.font.sizes.md};
     padding: 0 ${iconOnly ? 0 : theme.spacings.sm};
-    width: ${iconOnly ? '4.8rem' : 'auto'};
+    width: ${iconOnly ? '4.8rem' : 'fit-content'};
 
     svg {
       width: 2.4rem;
@@ -68,6 +68,7 @@ export const Wrapper = styled.button<WrapperProps>`
     gap: ${theme.spacings.xxs};
     background-size: 200% 200%;
     transition: background-position 0.2s linear;
+    text-decoration: none;
 
     &:hover {
       background-position: 0 100%;

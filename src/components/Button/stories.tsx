@@ -37,3 +37,13 @@ export const IconOnly: StoryObj<typeof Button> = {
     $fullWidth: false
   }
 }
+
+export const AsLink: StoryObj<typeof Button> = {
+  args: {
+    children: 'Buy now',
+    icon: <ShoppingCart />,
+    size: 'md',
+    as: 'a',
+    href: '#'
+  }
+}
