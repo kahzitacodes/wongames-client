@@ -7,7 +7,6 @@ export const Wrapper = styled.menu`
   align-items: center;
   padding: 1.2rem 0;
   position: relative;
-  justify-content: space-between;
 `
 
 export const LogoWrapper = styled.div`
@@ -22,6 +21,13 @@ export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
     gap: ${theme.spacings.xxs};
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+
+    ${media.greaterThan('medium')`
+      gap: ${theme.spacings.xs};
+    `};
   `}
 `
 
@@ -44,9 +50,15 @@ export const IconWrapper = styled.div`
     }
   `}
 `
-export const MenuNav = styled.div``
+export const MenuNav = styled.div`
+  ${({ theme }) => css`
+    margin-left: ${theme.spacings.sm};
+    gap: ${theme.spacings.sm};
+  `}
+`
 export const MenuLink = styled.a`
   ${({ theme }) => css`
+    color: ${theme.colors.white};
     position: relative;
     font-size: ${theme.font.sizes.md};
     margin: 0.3rem 2.4rem 0;
@@ -109,7 +121,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
       color: ${theme.colors.black};
       font-weight: ${theme.font.weight.bold};
       font-size: ${theme.font.sizes.xl};
-      margin-bottom: ${theme.spacings.sm};
       transform: ${$isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform 0.3s ease-in-out;
     }
