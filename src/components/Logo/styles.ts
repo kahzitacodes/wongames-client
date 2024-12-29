@@ -22,10 +22,11 @@ const wrapperModifiers = {
         height: 4.0rem;
       }
 
-      .text {
-        display: none;
-      }
     `}
+
+    .text {
+      display: none;
+    }
   `
 }
 

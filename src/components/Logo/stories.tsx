@@ -7,9 +7,4 @@ export default {
   component: Logo
 } as Meta
 
-export const Default: StoryObj<LogoProps> = {
-  args: {
-    color: 'white',
-    size: 'medium'
-  }
-}
+export const Default: StoryObj<LogoProps> = {}

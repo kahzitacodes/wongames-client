@@ -1,6 +1,5 @@
-import { Meta, StoryFn } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react'
 import { Button } from '.'
-import { ButtonProps } from './types'
 import { ShoppingCart } from 'lucide-react'
 
 export default {
@@ -16,27 +15,25 @@ export default {
   }
 } as Meta
 
-export const Default: StoryFn<ButtonProps> = (args) => <Button {...args} />
-
-Default.args = {
-  children: 'Buy now',
-  size: 'md',
-  $fullWidth: false
+export const Default: StoryObj<typeof Button> = {
+  args: {
+    children: 'Buy now'
+  }
 }
 
-export const WithIcon: StoryFn<ButtonProps> = (args) => <Button {...args} />
-
-WithIcon.args = {
-  children: 'Buy now',
-  icon: <ShoppingCart />,
-  size: 'md',
-  $fullWidth: false
+export const WithIcon: StoryObj<typeof Button> = {
+  args: {
+    children: 'Buy now',
+    icon: <ShoppingCart />,
+    size: 'md',
+    $fullWidth: false
+  }
 }
 
-export const IconOnly: StoryFn<ButtonProps> = (args) => <Button {...args} />
-
-IconOnly.args = {
-  icon: <ShoppingCart />,
-  size: 'md',
-  $fullWidth: false
+export const IconOnly: StoryObj<typeof Button> = {
+  args: {
+    icon: <ShoppingCart />,
+    size: 'md',
+    $fullWidth: false
+  }
 }
