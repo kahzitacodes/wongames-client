@@ -24,7 +24,7 @@ describe('<Heading />', () => {
     renderWithTheme(<Heading $borderLeft>Won Games</Heading>)
 
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
-      'border-left': '0.6rem solid #2496FF'
+      'border-left': '0.6rem solid #F366A7'
     })
   })
 
@@ -34,6 +34,44 @@ describe('<Heading />', () => {
     expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
       'border-bottom',
       '0.6rem solid #F366A7',
+      {
+        modifier: '::after'
+      }
+    )
+  })
+
+  it('should render a small size heading ', () => {
+    renderWithTheme(
+      <Heading size="sm" $borderBottom>
+        Won Games
+      </Heading>
+    )
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '1.6rem'
+    })
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
+      'width',
+      '3rem',
+      {
+        modifier: '::after'
+      }
+    )
+  })
+
+  it('should render a heading with border in the accent color', () => {
+    renderWithTheme(
+      <Heading bordercolor="accent" $borderLeft $borderBottom>
+        Won Games
+      </Heading>
+    )
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'border-left': '0.6rem solid #2496FF'
+    })
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
+      'border-bottom',
+      '0.6rem solid #2496FF',
       {
         modifier: '::after'
       }
