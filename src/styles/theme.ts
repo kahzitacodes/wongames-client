@@ -36,6 +36,7 @@ export default {
     bgLight: '#1F2141',
     white: '#FAFAFA',
     black: '#05061A',
+    blackAlpha7: 'rgba(5, 6, 26, 0.7)',
     grayLight: '#ECECEF',
     gray: '#6F7287',
     grayDark: '#2C2E3E',
