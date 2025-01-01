@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Ribbon /> should render the Ribbon 1`] = `
+.c0 {
+  top: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #FAFAFA;
+  font-weight: 600;
+  width: fit-content;
+  position: absolute;
+  background-color: #2496FF;
+  height: 3.6rem;
+  font-size: 1.4rem;
+  padding: 0 3.2rem;
+  right: -2rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #1177D6;
+  border-top-color: #1177D6;
+}
+
+.c0::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div
+  class="c0"
+  color="accent"
+>
+  Best seller
+</div>
+`;
+
+exports[`<Ribbon /> should render the Ribbon default size 1`] = `
+.c0 {
+  top: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #FAFAFA;
+  font-weight: 600;
+  width: fit-content;
+  position: absolute;
+  background-color: #2496FF;
+  height: 3.6rem;
+  font-size: 1.4rem;
+  padding: 0 3.2rem;
+  right: -2rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #1177D6;
+  border-top-color: #1177D6;
+}
+
+.c0::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div
+  class="c0"
+  color="accent"
+>
+  Best seller
+</div>
+`;
+
+exports[`<Ribbon /> should render the Ribbon with accent color by default 1`] = `
+.c0 {
+  top: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #FAFAFA;
+  font-weight: 600;
+  width: fit-content;
+  position: absolute;
+  background-color: #2496FF;
+  height: 3.6rem;
+  font-size: 1.4rem;
+  padding: 0 3.2rem;
+  right: -2rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #1177D6;
+  border-top-color: #1177D6;
+}
+
+.c0::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div
+  class="c0"
+  color="accent"
+>
+  Best seller
+</div>
+`;
+
+exports[`<Ribbon /> should render the Ribbon with danger color when color is passed 1`] = `
+.c0 {
+  top: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #FAFAFA;
+  font-weight: 600;
+  width: fit-content;
+  position: absolute;
+  background-color: #FB6E78;
+  height: 3.6rem;
+  font-size: 1.4rem;
+  padding: 0 3.2rem;
+  right: -2rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c0::before {
+  border-left-color: #F55D5D;
+  border-top-color: #F55D5D;
+}
+
+.c0::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+<div
+  class="c0"
+  color="red"
+>
+  Best seller
+</div>
+`;
