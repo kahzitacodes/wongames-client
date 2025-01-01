@@ -46,4 +46,17 @@ describe('<Ribbon />', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  it('should render the Ribbon small size', () => {
+    const { container } = renderWithTheme(
+      <Ribbon size="sm">Best seller</Ribbon>
+    )
+
+    expect(screen.getByText(/best seller/i)).toHaveStyle({
+      height: '2.8rem',
+      'font-size': '1.2rem'
+    })
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })
