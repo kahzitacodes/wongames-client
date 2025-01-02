@@ -9,9 +9,7 @@ export const Wrapper = styled.article`
     width: 100%;
     height: 100%;
     position: relative;
-
-    border-bottom-left-radius: ${theme.borderRadius.sm};
-    border-bottom-right-radius: ${theme.borderRadius.sm};
+    border-radius: ${theme.borderRadius.sm};
 
     ${RibbonStyles.Wrapper} {
       z-index: ${theme.layers.base};
@@ -20,35 +18,40 @@ export const Wrapper = styled.article`
 `
 
 export const ImageContainer = styled.div`
-  height: 16rem;
-  width: 100%;
-  position: relative;
-  background: #f6f7f8;
-  background-image: linear-gradient(
-    to right,
-    #f6f7f8 0%,
-    #edeef1 20%,
-    #f6f7f8 40%,
-    #f6f7f8 100%
-  );
-  background-size: 80rm 14rm;
-  animation: placeholderShimmer 1s linear infinite forwards;
-
-  img {
+  ${({ theme }) => css`
+    border-top-left-radius: ${theme.borderRadius.sm};
+    border-top-right-radius: ${theme.borderRadius.sm};
+    height: 16rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    position: relative;
+    background: #f6f7f8;
+    background-image: linear-gradient(
+      to right,
+      #f6f7f8 0%,
+      #edeef1 20%,
+      #f6f7f8 40%,
+      #f6f7f8 100%
+    );
+    background-size: 80rm 14rm;
+    animation: placeholderShimmer 1s linear infinite forwards;
+    overflow: hidden;
 
-  @keyframes placeholderShimmer {
-    0% {
-      background-position: -40rem 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    100% {
-      background-position: 40rem 0;
+    @keyframes placeholderShimmer {
+      0% {
+        background-position: -40rem 0;
+      }
+
+      100% {
+        background-position: 40rem 0;
+      }
     }
-  }
+  `}
 `
 
 export const Content = styled.div`
