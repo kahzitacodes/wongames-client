@@ -1,6 +1,12 @@
-import { createGlobalStyle, css } from 'styled-components'
+import { createGlobalStyle, css, DefaultTheme } from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
+type GLobalStylesProps = {
+  removeBg?: boolean
+}
+
+const GlobalStyles: React.NamedExoticComponent<
+  GLobalStylesProps & DefaultTheme
+> = createGlobalStyle`
   @font-face {
     font-display: swap;
     font-family: 'Poppins';
@@ -39,9 +45,14 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
   }
 
-  ${({ theme }) => css`
+  ${({ theme, removeBg }) => css`
     html {
       font-size: 62.5%; // 1rem = 10px == 10/16px = 62.5% (1.4rem == 14px)
     }
@@ -49,6 +60,11 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.md};
+
+      ${!removeBg &&
+      css`
+        background: ${theme.color.bg}; !important};
+      `}
     }
   `}
 `
