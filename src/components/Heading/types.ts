@@ -4,7 +4,7 @@ export type HeadingProps = {
   $borderLeft?: boolean
   $borderBottom?: boolean
   size?: HeadingSizes
-  bordercolor?: HeadingBorderColors
+  $borderColor?: HeadingBorderColors
 }
 
 export type HeadingBorderColors = 'brand' | 'accent'

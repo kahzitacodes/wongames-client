@@ -61,7 +61,7 @@ describe('<Heading />', () => {
 
   it('should render a heading with border in the accent color', () => {
     renderWithTheme(
-      <Heading bordercolor="accent" $borderLeft $borderBottom>
+      <Heading $borderColor="accent" $borderLeft $borderBottom>
         Won Games
       </Heading>
     )

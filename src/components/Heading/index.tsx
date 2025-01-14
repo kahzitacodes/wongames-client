@@ -7,14 +7,14 @@ export const Heading = ({
   $borderLeft,
   $borderBottom,
   size = 'md',
-  bordercolor = 'brand'
+  $borderColor = 'brand'
 }: HeadingProps) => (
   <S.Wrapper
     color={color}
     $borderLeft={$borderLeft}
     $borderBottom={$borderBottom}
     size={size}
-    bordercolor={bordercolor}
+    $borderColor={$borderColor}
   >
     {children}
   </S.Wrapper>

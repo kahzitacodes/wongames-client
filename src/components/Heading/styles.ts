@@ -46,19 +46,19 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.h2<HeadingProps>`
-  ${({ theme, color, $borderLeft, $borderBottom, bordercolor, size }) => css`
+  ${({ theme, color, $borderLeft, $borderBottom, $borderColor, size }) => css`
     line-height: 130%;
     color: ${theme.colors[color!]};
     line-height: 130%;
 
     ${$borderLeft &&
-    bordercolor &&
+    $borderColor &&
     size &&
-    wrapperModifiers.borderLeft(theme, bordercolor, size)}
+    wrapperModifiers.borderLeft(theme, $borderColor, size)}
 
     ${$borderBottom &&
-    bordercolor &&
-    wrapperModifiers.borderBottom(theme, bordercolor)}
+    $borderColor &&
+    wrapperModifiers.borderBottom(theme, $borderColor)}
 
     ${!!size && wrapperModifiers[size](theme)}
   `}
