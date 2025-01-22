@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '../Button'
 import { Ribbon } from '../Ribbon'
 import * as S from './styles'

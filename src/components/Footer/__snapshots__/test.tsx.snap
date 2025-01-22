@@ -16,7 +16,7 @@ exports[`<Footer /> should render four column topics 1`] = `
   left: 0;
   bottom: -1rem;
   width: 5rem;
-  border-bottom: 0.6rem solid #F366A7;
+  border-bottom: 0.6rem solid #2496FF;
 }
 
 .c5::after {

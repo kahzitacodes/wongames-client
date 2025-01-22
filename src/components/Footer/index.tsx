@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { Heading } from '../Heading'
 import { Logo } from '../Logo'
@@ -8,7 +10,7 @@ export const Footer = () => (
     <Logo color="black" />
     <S.Content>
       <S.Column>
-        <Heading size="sm" $borderBottom bordercolor="accent" color="black">
+        <Heading size="sm" $borderBottom $borderColor="accent" color="black">
           Contact
         </Heading>
 
@@ -16,7 +18,7 @@ export const Footer = () => (
       </S.Column>
 
       <S.Column>
-        <Heading size="sm" $borderBottom bordercolor="accent" color="black">
+        <Heading size="sm" $borderBottom $borderColor="accent" color="black">
           Follow us
         </Heading>
 
@@ -40,7 +42,7 @@ export const Footer = () => (
       </S.Column>
 
       <S.Column>
-        <Heading size="sm" $borderBottom bordercolor="accent" color="black">
+        <Heading size="sm" $borderBottom $borderColor="accent" color="black">
           Links
         </Heading>
 
@@ -53,7 +55,7 @@ export const Footer = () => (
       </S.Column>
 
       <S.Column>
-        <Heading size="sm" $borderBottom bordercolor="accent" color="black">
+        <Heading size="sm" $borderBottom $borderColor="accent" color="black">
           Location
         </Heading>
 

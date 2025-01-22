@@ -1,7 +1,12 @@
-'use client'
+import { Home } from '@/templates/home'
 
-import { Home } from '@/templates/Home'
+async function getStaticData() {
+  return {
+    heading: 'olha eu aqui'
+  }
+}
 
-export default function Page() {
-  return <Home />
+export default async function Page() {
+  const staticData = await getStaticData()
+  return <Home {...staticData} />
 }

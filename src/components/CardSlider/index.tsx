@@ -1,3 +1,5 @@
+'use client'
+
 import { Card } from '../Card'
 import { Slider } from '../Slider'
 import { SliderSettings } from '../Slider/types'

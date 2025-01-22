@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import * as S from './styles'
 import { Heart, ShoppingCart } from 'lucide-react'

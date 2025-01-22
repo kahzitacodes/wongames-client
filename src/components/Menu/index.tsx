@@ -1,3 +1,5 @@
+'use client'
+
 import * as S from './styles'
 import * as Icon from 'lucide-react'
 import { Logo } from '../Logo'

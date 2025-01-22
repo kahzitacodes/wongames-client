@@ -1,3 +1,5 @@
+'use client'
+
 import styled, { css } from 'styled-components'
 import { Breakpoint, MediaMatchProps } from './types'
 import media from 'styled-media-query'

@@ -1,3 +1,5 @@
+'use client'
+
 import { Banner } from '../Banner'
 import { Slider } from '../Slider'
 import { BannerSliderProps } from './types'
