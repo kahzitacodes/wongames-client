@@ -32,6 +32,17 @@ export const Wrapper = styled.main`
       }
     }
 
+    ${media.greaterThan('medium')`
+      .slick-list {
+        width: calc(100% + 4rem);
+        margin-left: -2rem
+      }
+
+      .slick-slide {
+        padding: 0 2rem;
+      }
+    `}
+
     ${media.greaterThan('large')`
       .slick-dots {
         position: absolute;
@@ -46,7 +57,6 @@ export const Wrapper = styled.main`
       }
 
       ${BannerStyles.Wrapper} {
-        //max-width: 104rem;
         margin: 0 auto;
       }
     `}
