@@ -5,7 +5,7 @@ export default [
     subTitle: '<p>Play the new <strong>CrashLands</strong> season',
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death',
-    ribbon: 'Bestselling'
+    ribbon: 'Best seller'
   },
   {
     img: 'https://images.unsplash.com/photo-1732738164570-0e9d4684c30a?w=1000',
