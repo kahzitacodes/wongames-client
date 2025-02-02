@@ -35,7 +35,7 @@ export const Wrapper = styled.main`
     ${media.greaterThan('large')`
       .slick-dots {
         position: absolute;
-        right: 0;
+        right: -3rem;
         flex-direction: column;
         height: 100%;
         top: 0;
@@ -46,7 +46,7 @@ export const Wrapper = styled.main`
       }
 
       ${BannerStyles.Wrapper} {
-        max-width: 104rem;
+        //max-width: 104rem;
         margin: 0 auto;
       }
     `}

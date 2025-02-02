@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 import { HighlightProps } from './types'
 
-type WrapperProps = Pick<HighlightProps, '$bgImage' | 'alignment'>
-type ContentProps = Pick<HighlightProps, 'alignment'>
+type WrapperProps = Pick<HighlightProps, '$bgImage' | '$alignment'>
+type ContentProps = Pick<HighlightProps, '$alignment'>
 
 const wrapperModifiers = {
   start: () => css`
@@ -33,7 +33,7 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.section<WrapperProps>`
-  ${({ theme, $bgImage, alignment }) => css`
+  ${({ theme, $bgImage, $alignment }) => css`
     position: relative;
     background-image: url(${$bgImage});
     background-position: center center;
@@ -53,7 +53,7 @@ export const Wrapper = styled.section<WrapperProps>`
       background-color: ${theme.colors.blackAlpha7};
     }
 
-    ${alignment && wrapperModifiers[alignment]()}
+    ${$alignment && wrapperModifiers[$alignment]()}
   `}
 `
 

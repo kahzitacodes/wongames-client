@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { Button } from '../Button'
 import { Ribbon } from '../Ribbon'
 import * as S from './styles'
@@ -14,22 +15,31 @@ export const Banner = ({
   ribbon,
   ribbonColor,
   ribbonSize
-}: BannerProps) => (
-  <S.Wrapper>
-    {ribbon && (
-      <Ribbon color={ribbonColor} size={ribbonSize}>
-        {ribbon}
-      </Ribbon>
-    )}
+}: BannerProps) => {
+  const [isHydrated, setIsHydrated] = useState(false)
 
-    <S.Image src={img} role="img" aria-label={title} />
-    <S.Caption>
-      <S.Title>{title}</S.Title>
-      <S.SubTitle dangerouslySetInnerHTML={{ __html: subTitle }} />
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
 
-      <Button as="a" href={buttonLink} size="lg">
-        {buttonLabel}
-      </Button>
-    </S.Caption>
-  </S.Wrapper>
-)
+  return (
+    <S.Wrapper>
+      {ribbon?.trim() && (
+        <Ribbon color={ribbonColor} size={ribbonSize}>
+          {ribbon}
+        </Ribbon>
+      )}
+
+      <S.Image src={img} role="img" aria-label={title} />
+      <S.Caption>
+        <S.Title>{title}</S.Title>
+        {isHydrated && (
+          <S.SubTitle dangerouslySetInnerHTML={{ __html: subTitle }} />
+        )}
+        <Button as="a" href={buttonLink} size="lg">
+          {buttonLabel}
+        </Button>
+      </S.Caption>
+    </S.Wrapper>
+  )
+}

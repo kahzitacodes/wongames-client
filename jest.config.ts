@@ -19,7 +19,8 @@ const config: Config = {
     '!src/templates/**/styles.ts',
     '!src/styles/**',
     '!src/templates/**/types.ts',
-    '!src/components/**/types.ts'
+    '!src/components/**/types.ts',
+    '!src/components/**/mock.ts'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],

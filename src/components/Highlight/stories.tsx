@@ -1,16 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { Highlight } from '.'
+import item from './mock'
 
 export default {
   title: 'Highlight',
   component: Highlight,
-  args: {
-    title: 'Red Dead is back',
-    subtitle: "Come see John's new adventure",
-    buttonLabel: 'Buy now',
-    buttonLink: '#',
-    $bgImage: '/img/red-dead-bg.png'
-  }
+  args: { ...item }
 } as Meta
 
 export const Default: StoryObj<typeof Highlight> = {

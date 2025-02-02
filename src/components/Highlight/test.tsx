@@ -53,7 +53,7 @@ describe('<Highlight />', () => {
 
   it('should render content in the start', () => {
     const { container } = renderWithTheme(
-      <Highlight alignment="start" {...props} />
+      <Highlight $alignment="start" {...props} />
     )
 
     expect(container.firstChild).toHaveStyleRule(

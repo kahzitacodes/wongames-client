@@ -5,5 +5,5 @@ export type HighlightProps = {
   buttonLink: string
   $bgImage: string
   floatImage?: string
-  alignment?: 'start' | 'end'
+  $alignment?: 'start' | 'end'
 }

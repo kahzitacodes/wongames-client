@@ -5,11 +5,11 @@ export const Wrapper = styled.article`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    background-color: ${theme.colors.white};
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: ${theme.borderRadius.sm};
+    overflow: hidden;
 
     ${RibbonStyles.Wrapper} {
       z-index: ${theme.layers.base};
@@ -32,7 +32,7 @@ export const ImageContainer = styled.div`
       #f6f7f8 40%,
       #f6f7f8 100%
     );
-    background-size: 80rm 14rm;
+    background-size: 80rem 14rem;
     animation: placeholderShimmer 1s linear infinite forwards;
     overflow: hidden;
 
@@ -61,6 +61,7 @@ export const Content = styled.div`
     gap: ${theme.spacings.xs};
     padding: ${theme.spacings.xs};
     position: relative;
+    background-color: ${theme.colors.white};
   `}
 `
 
